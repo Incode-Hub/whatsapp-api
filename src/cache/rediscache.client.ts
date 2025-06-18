@@ -30,7 +30,7 @@ class Redis {
       });
 
       this.client.on('error', (err: { message: string; }) => {
-        this.logger.error('redis disconnected');
+        // this.logger.error('redis disconnected');
         this.logger.error('redis error: ' + err.message);
         this.connected = false;
       });
